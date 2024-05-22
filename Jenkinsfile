@@ -17,6 +17,12 @@ pipeline {
                 sh 'terraform plan'
             }
         }
+        stage('Terraform Apply') {
+            steps {
+              //  input 'Deploy to AWS?'
+                sh 'terraform apply -auto-approve'
+            }
+        }
         stage('Terraform Destroy') {
             steps {
               //  input 'Deploy to AWS?'
