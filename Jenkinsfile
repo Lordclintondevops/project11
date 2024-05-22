@@ -25,7 +25,7 @@ pipeline {
         }
         stage('sleep 120') {
             steps {
-                sleep 120
+                sleep time: 2, unit: 'MINUTES'
             }
         }
         stage('Terraform Destroy') {
