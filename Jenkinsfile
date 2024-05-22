@@ -16,21 +16,21 @@ pipeline {
                 sh 'terraform plan'
             }
         }
-        stage('Terraform Apply') {
+        stage('Terraform Destroy') {
             steps {
               //  input 'Deploy to AWS?'
-                sh 'terraform apply -auto-approve'
+                sh 'terraform destroy -auto-approve'
             }
         }
-         stage('Terraform Destroy') {
-             steps {
-                 script {
-                     dir('path/to/terraform/config') {
-                        // Execute 'terraform destroy' to destroy the infrastructure
-                         sh 'terraform destroy -auto-approve'
-                     }
-                 }
-             }
-        }
+        //  stage('Terraform Destroy') {
+        //      steps {
+        //          script {
+        //              dir('path/to/terraform/config') {
+        //                 // Execute 'terraform destroy' to destroy the infrastructure
+        //                  sh 'terraform destroy -auto-approve'
+        //              }
+        //          }
+        //      }
+        // }
     }
 }
