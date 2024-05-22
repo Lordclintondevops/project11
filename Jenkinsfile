@@ -22,15 +22,15 @@ pipeline {
                 sh 'terraform apply -auto-approve'
             }
         }
-        // stage('Terraform Destroy') {
-        //     steps {
-        //         script {
-        //             dir('path/to/terraform/config') {
-        //                 // Execute 'terraform destroy' to destroy the infrastructure
-        //                 sh 'terraform destroy -auto-approve'
-        //             }
-        //         }
-            }
+        // // stage('Terraform Destroy') {
+        // //     steps {
+        // //         script {
+        // //             dir('path/to/terraform/config') {
+        // //                 // Execute 'terraform destroy' to destroy the infrastructure
+        // //                 sh 'terraform destroy -auto-approve'
+        // //             }
+        // //         }
+        //     }
         }
     }
 }
