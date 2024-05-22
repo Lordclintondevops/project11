@@ -2,7 +2,7 @@
 
 # terraform init
 
-terraform plan
+# terraform plan
 
 # terraform apply -auto-approve
 
@@ -16,8 +16,8 @@ terraform plan
 
 git add .
 
-git commit -m "new project"
+git commit -m "updates made"
 
-git remote add clinton https://github.com/Lordclintondevops/project11.git
+# git remote add clinton https://github.com/Lordclintondevops/project11.git
 
 git push clinton main
