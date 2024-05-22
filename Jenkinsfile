@@ -23,6 +23,11 @@ pipeline {
                 sh 'terraform apply -auto-approve'
             }
         }
+        stage('sleep 120') {
+            steps {
+                sleep 120
+            }
+        }
         stage('Terraform Destroy') {
             steps {
               //  input 'Deploy to AWS?'
