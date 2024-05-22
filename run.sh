@@ -18,6 +18,8 @@ git add .
 
 git commit -m "updates made"
 
- git remote add clinton https://github.com/Lordclintondevops/project101.git
+git pull clinton main
 
-git push clinton main
+# git remote add clinton https://github.com/Lordclintondevops/project11.git
+
+# git push clinton main
